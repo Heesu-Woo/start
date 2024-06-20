@@ -1,0 +1,165 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.container {
+  width: 60%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:  30px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #ffffff;
+  color: #3c3c3c;
+  padding: 1em 0;
+  position: relative;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 2em;
+  margin: 0;
+}
+
+.header .nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.header .nav ul li {
+  margin-right: 20px;
+}
+
+.header .nav ul li a {
+  color: #3c3c3c;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.header .nav ul li a:hover {
+  color: #0291ff; /* Change to your desired hover color */
+}
+
+/* Main Content Styles */
+.main {
+  padding: 2em 0;
+}
+
+.section-plan {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.5em;
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.tool-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tool-title {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+.tool-description {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.tool-table {
+  width: 100%;
+  margin-top: 1em;
+  border-collapse: collapse;
+}
+
+.tool-table th, .tool-table td {
+  padding: 0.5em;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.tool-table th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #ffffff;
+  color: #c8c8c8;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 0.8em;
+}
+
+/* Animation and Effects */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section-plan {
+  animation: slideInFromLeft .5s ease-out;
+}
+
+.tool-list li {
+  animation: fadeIn .5s ease-out;
+}
+
